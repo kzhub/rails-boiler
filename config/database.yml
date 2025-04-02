@@ -15,7 +15,7 @@ development:
   database: rails_speed_development
   username: postgres
   password: password
-  host: postgres
+  host: localhost
   port: 5432
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,7 @@ test:
   database: rails_speed_test
   username: postgres
   password: password
-  host: postgres
+  host: localhost
   port: 5432
 
 production:
@@ -34,5 +34,5 @@ production:
   database: rails_speed_production
   username: postgres
   password: <%= ENV['RAILS_SPEED_DATABASE_PASSWORD'] %>
-  host: postgres
+  host: localhost
   port: 5432
